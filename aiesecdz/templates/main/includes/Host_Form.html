@@ -1,0 +1,56 @@
+{% load static %}
+{% block css %}
+<link rel='stylesheet' href="{% static 'css/Host_Form.css' %}" type='text/css' />
+{% endblock %}
+
+<div class="color container" style="text-align: center;">
+	<div style="text-align: center;   padding-top: 100px">
+		<div class="border">
+
+			<div class="row justify-content-md-center  title">
+				<div class="col-md-12">
+
+					<span style="font-size: 2em">Want to become a host family ? </span>
+					<p style="font-size: 2em">FILL THIS FORM</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-md-center">
+				<div class="col-md-12">
+					<form style="font-size: 1.5em">
+						Full Name <input type="text" name="Full Name" placeholder="Your full name" required=""
+							class="form_control"> <br>
+						Phone Number <input type="text" name="Phone Number" placeholder="Your Phone Number" required=""
+							class="form_control"> <br>
+						Email <input type="text" name="Email" placeholder="Your Email" required="" class="form_control">
+						<br>
+
+						City
+						<select name="City" class="form_control">
+							<option value="city1">Algeirs west</option>
+							<option value="city2">Algeirs east</option>
+							<option value="city3">Blida</option>
+							<option value="city4">Constantine</option>
+							<option value="city5">Oran</option>
+							<option value="city6">Ouargla</option>
+
+						</select>
+
+						When are you available ? <TEXTAREA name="When are you available"
+							placeholder="When are you available for hosting exchange participant? e.g. from june the 2nd till july the 22nd.  "
+							row="4" required="" class="form_control"> </TEXTAREA> <br>
+
+						When can we reach you ? <TEXTAREA name="When are you available"
+							placeholder="	When is a good time to call you? e.g. every evening after 7pm  " row="4"
+							required="" class="form_control"> </TEXTAREA> <br>
+
+						<input style="background-color: #037ef3ff; color: white" type="submit" name="Send"
+							class="form_control submit">
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

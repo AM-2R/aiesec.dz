@@ -1,0 +1,284 @@
+{% extends 'babez/base.html' %}
+
+{% load static %}
+
+{% block heads %}
+<link rel="stylesheet" href="{% static 'babez/css/lc.css' %}">
+{% endblock heads %}
+
+{% block content %}
+<header class="masthead text-white text-center">
+    <div class="overlay" style="opacity: 0.81;background-color: #000;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 text-break mx-auto">
+                <h1 class="mb-5">MEET AIESEC IN BABEZ</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container mt-5">
+    <div class="row mb-5">
+        <div class="col-md-3">
+            <h1>WE DON'T TALK, WE PERFORM</h1>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Creation</h2>
+                </div>
+                <div class="col-md-9">
+                    <p>
+                        AIESEC was introduced to Algeria via AIESEC Tunisia, by the MCP of AIESEC Tunisia, it
+                        was an expansion around 2009, and then it gained its full membership later on.
+                        We started as an association that was restricted into charitable activities and social
+                        impacting, having humble meetings of 10 to 12 members in Rouiba in a wedding space!
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Evolution</h2>
+                </div>
+                <div class="col-md-9">
+                    <p>
+                        AIESEC In Babez has made a big leap since its creation. By helping more than 2000 young
+                        algerians develop themselves and share their culture through volunteering, AIESEC In Babez has
+                        made an important impact in promoting the values of Diversity and World Citizenship into our
+                        society.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stats text-white px-2 mb-5">
+        <div class="row">
+            <div class="col-4 text-center">
+                <i class="far fa-user-circle"></i>
+                <h4><span class="counter">8500</span>+</h4>
+                <p>Applicants</p>
+            </div>
+            <div class="col-4 text-center">
+                <i class="far fa-lightbulb"></i>
+                <h4><span class="counter">200</span>+</h4>
+                <p>Local opportunities</p>
+            </div>
+            <div class="col-4 text-center">
+                <i class="far fa-clock"></i>
+                <h4><span class="counter">11</span> years</h4>
+                <p>Since creation</p>
+            </div>
+        </div>
+    </div>
+    <section class="pb-5">
+        <h1>Testimonials</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 mx-auto">
+                    <div class="p-md-5 bg-white shadow rounded">
+                        <!-- Bootstrap carousel-->
+                        <div class="carousel slide testimonial_carousel" id="carouselExampleIndicators" data-ride="carousel" >
+                            <!-- Bootstrap carousel indicators [nav] -->
+                            <ol class="carousel-indicators mb-0">
+                                <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+
+
+                            <!-- Bootstrap inner [slides]-->
+                            <div class="carousel-inner px-5 pb-4">
+                                <!-- Carousel slide-->
+                                <div class="carousel-item active">
+                                    <div class="media row">
+                                        <img class="rounded-circle img-thumbnail col-12 col-md-3"
+                                            src="{% static "babez/images/hamza.jpg" %}" alt="" width="75">
+                                        <div class="media-body col-12 col-md-9">
+                                            <blockquote class="blockquote border-0 p-0">
+                                                <p class="font-italic lead">
+                                                    <i class="fa fa-quote-left mr-3 text-success"></i>
+                                                    My first impression was back in 2011, where I was a delegate in the
+                                                    Summer Sunshine School with AIESEC, and it was simply wonderful as
+                                                    the shy
+                                                    person I used to be. I saw AIESEC as a way to learn and discover
+                                                    more about myself.
+                                                </p>
+                                                <footer class="blockquote-footer">Hamza STITI
+                                                    <cite title="Source Title">AIESEC In Babez member (2012-2016)</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Carousel slide-->
+                                <div class="carousel-item">
+                                    <div class="media row">
+                                        <img class="rounded-circle img-thumbnail col-12 col-md-3"
+                                            src="{% static "babez/images/ep_angela.jpg" %}" alt="" width="75">
+                                        <div class="media-body col-12 col-md-9">
+                                            <blockquote class="blockquote border-0 p-0">
+                                                <p class="font-italic lead">
+                                                    <i class="fa fa-quote-left mr-3 text-success"></i>
+                                                    People in the organization, other EPs and everything else were
+                                                    amazing. I'm so glad I came to Algeria instead of another country!
+                                                </p>
+                                                <footer class="blockquote-footer">Angela
+                                                    <cite title="Source Title">Former Exchange Participant with aiesec In Babez</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Carousel slide-->
+                                <div class="carousel-item">
+                                    <div class="media row">
+                                        <img class="rounded-circle img-thumbnail col-12 col-md-3"
+                                            src="{% static "babez/images/ep_stefen.jpg" %}" alt="" width="75">
+                                        <div class="media-body col-12 col-md-9">
+                                            <blockquote class="blockquote border-0 p-0">
+                                                <p class="font-italic lead">
+                                                    <i class="fa fa-quote-left mr-3 text-success"></i>
+                                                    Thank you for this wonderful experience, I commend all of you for
+                                                    your sacrifice, efforts and services. I promise you that I will
+                                                    return to Algeria soon, God willing!
+                                                </p>
+                                                <footer class="blockquote-footer">Stefen
+                                                    <cite title="Source Title">Former Exchange Participant with aiesec In Babez</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Bootstrap controls [dots]-->
+                            <a class="carousel-control-prev width-auto" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <i class="fa fa-angle-left text-dark text-lg"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next width-auto" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <i class="fa fa-angle-right text-dark text-lg"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials text-center pb-5">
+        <div class="container">
+            <h2 class="mb-5">Our Current EB</h2>
+            <div id="carouselEbControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                                        class="rounded-circle img-fluid mb-3"
+                                        src="{% static "babez/images/eb/Oussama.png" %}" />
+                                    <h5>Oussama Houassi</h5>
+                                    <p class="font-weight-light mb-0">Local Committee President</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                                        class="rounded-circle img-fluid mb-3" src="{% static "babez/images/eb/Amir.png" %}" />
+                                    <h5>Amir I. Otsmane</h5>
+                                    <p class="font-weight-light mb-0">Local Committee Vice President</p>
+                                    <p class="font-weight-light mb-0">Business To Costumer</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                                        class="rounded-circle img-fluid mb-3"
+                                        src="{% static "babez/images/eb/Yacine.png" %}" />
+                                    <h5>Yacine Abes</h5>
+                                    <p class="font-weight-light mb-0">Local Committee Vice President</p>
+                                    <p class="font-weight-light mb-0">In-coming Global Volunteer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                                        class="rounded-circle img-fluid mb-3"
+                                        src="{% static "babez/images/eb/Imene.png" %}" />
+                                    <h5>Imene Bouhlouf</h5>
+                                    <p class="font-weight-light mb-0">Local Committee Vice President</p>
+                                    <p class="font-weight-light mb-0">Business To Business</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                                        class="rounded-circle img-fluid mb-3"
+                                        src="{% static "babez/images/eb/Lydia.png" %}" />
+                                    <h5>Lydia Adamou</h5>
+                                    <p class="font-weight-light mb-0">Local Committee Vice President</p>
+                                    <p class="font-weight-light mb-0">Out-goin Global Volunteer</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                                        class="rounded-circle img-fluid mb-3"
+                                        src="{% static "babez/images/eb/Hichem.png" %}" />
+                                    <h5>Hichem Bekhti</h5>
+                                    <p class="font-weight-light mb-0">Local Committee Vice President</p>
+                                    <p class="font-weight-light mb-0">Finance & Legality</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                                        class="rounded-circle img-fluid mb-3"
+                                        src="{% static "babez/images/eb/Rania.png" %}" />
+                                    <h5>Rania Khanfar</h5>
+                                    <p class="font-weight-light mb-0">Local Committee Vice President</p>
+                                    <p class="font-weight-light mb-0">Out-going Global ET</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                                        class="rounded-circle img-fluid mb-3"
+                                        src="{% static "babez/images/eb/Mahmoud.png" %}" />
+                                    <h5>Mahmoud Benmoussa</h5>
+                                    <p class="font-weight-light mb-0">Local Committee Vice President</p>
+                                    <p class="font-weight-light mb-0">Talent Management</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img
+                                        class="rounded-circle img-fluid mb-3"
+                                        src="{% static "babez/images/eb/Romaissa.png" %}" />
+                                    <h5>Romaissa Mehdid</h5>
+                                    <p class="font-weight-light mb-0">Local Committee Vice President</p>
+                                    <p class="font-weight-light mb-0">in-coming Global ET</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselEbControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselEbControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+</div>
+{% endblock content %}

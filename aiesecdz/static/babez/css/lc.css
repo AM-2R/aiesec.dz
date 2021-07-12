@@ -1,0 +1,24 @@
+.masthead {
+    background-image: url("../images/banner.jpg");
+}
+
+.stats {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-color: #037ef3;
+}
+
+.stats i {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.testimonial_carousel {
+    height: 250px;
+}
+
+@media(max-width:770px) {
+    .testimonial_carousel {
+        height: 600px;
+    }
+}

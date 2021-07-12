@@ -1,0 +1,129 @@
+{% extends 'babez/base.html' %}
+
+{% load static %}
+
+{% block heads %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="{% static 'babez/css/algiers.css' %}">
+{% endblock %}
+
+{% block content %}
+<header class="masthead text-white text-center">
+    <div class="overlay" style="opacity: 0.81;background-color: #000;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 text-break mx-auto">
+                <h1 class="mb-5">TELL ME MORE ABOUT ALGIERS !</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="text-center section1">
+    <h2>Useful infos:</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="myCard">
+                    <img class="imgCard" src="{% static 'babez/images/multi-language-512.png' %}">
+                    <h2>LANGUAGE</h2>
+                    <h3>-Arabic</h3>
+                    <h3>-French</h3>
+                    <h3>-English</h3>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="myCard">
+                    <img class="imgCard" src="{% static 'babez/images/target-population.png' %}">
+                    <h2>POPULATION</h2>
+                    <h3>3.4 Millions</h3>
+                    <h3>(2012)</h3>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="myCard">
+                    <img class="imgCard" src="{% static 'babez/images/climate.png' %}">
+                    <h2>CLIMATE</h2>
+                    <h3>Mediterranean</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="section2">
+    <h2>Algiers' must see:</h2>
+    <div class="container-fluid">
+        <div class="carousel slide" data-ride="carousel" id="carousel-1">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="w-100 row myRow">
+                        <div class="col-md-7 myCol1 d-flex align-items-center justify-content-center">
+                            <p>Martyr's memorial</p>
+                        </div>
+                        <div class="col myCol2"
+                            style="background:url('{% static "babez/images/maqam.jpg" %}');background-size: cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 row myRow">
+                        <div class="col-md-5 myCol2"
+                            style="background:url('{% static "babez/images/hamma.jpg" %}');background-size: cover;">
+                        </div>
+                        <div class="col-md-7 myCol1 d-flex align-items-center justify-content-center">
+                            <p>The Botanical garden</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 row myRow">
+                        <div class="col-md-7 myCol1 d-flex align-items-center justify-content-center">
+                            <p>The Casbah</p>
+                        </div>
+                        <div class="col-md-5 myCol2"
+                            style="background:url('{% static "babez/images/casba.jpg" %}');background-size: cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 row myRow">
+                        <div class="col-md-5 myCol2"
+                            style="background:url('{% static "babez/images/bardo.jpg" %}');background-size: cover;">
+                        </div>
+                        <div class="col-md-7 myCol1 d-flex align-items-center justify-content-center">
+                            <p>Bardo Museum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 row myRow">
+                        <div class="col-md-7 myCol1 d-flex align-items-center justify-content-center">
+                            <p>Modern Art Museum</p>
+                        </div>
+                        <div class="col-md-5 myCol2"
+                            style="background:url('{% static "babez/images/maama.jpg" %}');background-size: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span></a>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                <li data-target="#carousel-1" data-slide-to="2"></li>
+                <li data-target="#carousel-1" data-slide-to="3"></li>
+                <li data-target="#carousel-1" data-slide-to="4"></li>
+            </ol>
+        </div>
+    </div>
+</section>
+{% endblock content %}

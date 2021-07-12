@@ -1,0 +1,31 @@
+.navbar {
+	background-color: #037ef3 !important;
+}
+
+.navbar a {
+	color: white;
+}
+
+.content {
+	margin-top: 76.8px;
+}
+
+@media (max-width: 770px) {
+	.content {
+		margin-top: 68.8px;
+	}
+}
+footer {
+	background-color: #f6f6f6;
+}
+
+.social {
+	color: #aaa;
+}
+
+/* TODO: Change color through animation */
+
+.social:hover {
+	color: #666;
+}
+

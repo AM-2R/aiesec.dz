@@ -1,0 +1,39 @@
+.faded {
+    animation: fadeout 0.4s;
+    background-color: rgba(3,126,243,0);
+}
+
+.unfaded {
+    animation: fadein 0.4s;
+    background-color: rgba(3,126,243,1);
+}
+
+@media screen and (max-width: 600px) {
+	.hide-for-mobile {
+		display: none;
+	}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fadeout {
+  0%   {background-color: rgba(3,126,243,1);}
+  100% {background-color: rgba(3,126,243,0);}
+}
+
+/* Standard syntax */
+@keyframes fadeout {
+  0%   {background-color: rgba(3,126,243,1);}
+  100% {background-color: rgba(3,126,243,0);}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fadein {
+  0%   {background-color: rgba(3,126,243,0);}
+  100% {background-color: rgba(3,126,243,1);}
+}
+
+/* Standard syntax */
+@keyframes fadein {
+  0%   {background-color: rgba(3,126,243,0);}
+  100% {background-color: rgba(3,126,243,1);}
+}

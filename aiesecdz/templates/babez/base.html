@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>{% block title %} AIESEC In Babez {% endblock %}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/png" href="{% static 'babez/images/blueman.png' %}">
+
+	{% block heads %}
+
+	{% endblock heads %}
+	<link rel="stylesheet" href="{% static 'babez/css/main.css' %}" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link rel="stylesheet" href="{% static 'babez/bootstrap/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'babez/css/Navigation-Clean.css' %}">
+	<link rel="stylesheet" href="{% static 'babez/css/styles.css' %}">
+</head>
+
+<body>
+
+	<!-- NavBar -->
+	<nav class="navbar fixed-top navbar-expand-xl navigation-clean">
+		<div class="container">
+			<button data-toggle="collapse" class="navbar-toggler text-white" data-target="#navcol-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
+			</button>
+			<a class="navbar-brand" href="{% url 'babez' %}">
+				<img src="{% static 'babez/images/aiesec.png' %}" style="width: 220px;">
+			</a>
+
+			<div class="collapse navbar-collapse" id="navcol-1">
+				<ul class="nav navbar-nav ml-auto" style="font-family: 'Raleway', Arial, Helvetica, sans-serif;
+					color: #666;font: inherit;text-transform: uppercase;">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" href="{% url 'babez'%}"><span id="myNav">Home</span></a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" href="{% url 'algiers' %}"><span id="myNav">Algiers: The
+								infographics</span></a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" href="{% url 'lc' %}"><span id="myNav">Our Local Committee</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="content">
+		{% block content %}
+		
+		{% endblock content %}
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="page-footer py-5">
+		<div class="container py-md-5">
+			<div class="row justify-content-center align-middle">
+				<div class="col-auto">
+					<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/aiesec.inbabez.1"><i class="fab social fa-facebook-f mr-md-5 mr-3 fa-lg fa-3x"></i></a>
+				</div>
+				<div class="col-auto">
+					<a target="_blank" rel="noopener noreferrer" href="https://instagram.com/eb_babez"><i class="fab social fa-instagram mr-md-5 mr-3 fa-lg fa-3x"></i></a>
+				</div>
+				<div class="col-auto">
+					<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/eb_babez"><i class="fab social fa-twitter mr-md-5 mr-3 fa-lg fa-3x"></i></a>
+				</div>
+			</div>
+			<div class="footer-copyright row justify-content-center py-3">
+				<span class="col-auto col-sm-auto">&copy; AIESEC</span>
+				<span class="col-auto col-sm-auto">AIESEC in Algeria</span>
+				<span class="col-auto col-sm-auto">AIESEC in Babez</span>
+				</ul>
+			</div>
+	</footer>
+
+	<script src="{% static 'babez/js/jquery.min.js' %}"></script>
+	<script src="{% static 'babez/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

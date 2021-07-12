@@ -1,0 +1,127 @@
+{% load static %}
+{% block css %}
+{% endblock %}
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-12 text-center mt-4">
+            <h1 style="text-align: center; color: #037ef3ff">
+                Looking for your wilaya office ?
+            </h1>
+            <p style="text-align: center; color: black; font-size: 25px; text-align: center; font-weight: 100;">
+             Below you can find our national and all of our regional offices.
+            </p>
+        </div>
+    </div>
+
+    <hr style="padding-top: 50px;">
+
+    <div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <img src="{% static 'images/pictures/ALG.png' %}" alt='' align="left" style=" height: 200px ; width: 2500px " />
+        </div>
+
+        <div class="col-md-8">
+            <strong>
+                <h2 style=" text-align: left ; color: black ;"> Our Local Committees </h2>
+            </strong>
+            <div style="font-size: 20px; text-align: left; margin-top: 15px ;">
+                <p> AIESEC in Algeria has got so far six local committees</p>
+               <p> Two in the capital : AIESEC in Benak and AIESEC in Babez </p>
+                <p>AIESEC in Oran</p>
+                <p>AIESEC in Blida </p>
+                <p>AIESEC in Ouargla</p>
+                <p>AIESEC in Constantine</p>
+            <p>Get in touch with the local committee closest to you </p>
+            </div>
+         </div>
+        
+</div>
+
+<div class="row justify-content-md-center wrap" style="box-sizing: border-box;  padding-top: 30px">
+
+
+    
+
+<div class="col-md-3" >
+	    <a  href="{% url 'AiA' %}" >
+            <div class='avia-image-container  av-styling-    avia-builder-el-15  el_before_av_textblock  avia-builder-el-first   avia-align-center ' itemprop="ImageObject" itemscope="itemscope">
+                <div ; class='avia-image-container-inner' style=" border: 1px solid #ccc ">
+                    <img class='avia_image ' src="{% static 'images/pictures/LCs/alg.png' %}"  itemprop="thumbnailUrl" style="height: auto; width : 200% " />
+                    <div style=" padding: 15px; text-align: left;"> AIESEC in Algeria </div>
+                </div>
+            </div>
+        </a>
+</div>
+        
+<div class="col-md-3" >
+	    <a  href="{% url 'babez' %}" >
+            <div class='avia-image-container  av-styling-    avia-builder-el-15  el_before_av_textblock  avia-builder-el-first   avia-align-center ' itemprop="ImageObject" itemscope="itemscope">
+                <div class='avia-image-container-inner' style="border: 1px solid #ccc" >
+                    <img class='avia_image ' src="{% static 'images/pictures/LCs/alg2.png' %}" itemprop="thumbnailUrl" style="height: auto; width : 100%  " />
+                     <div style=" padding: 15px; text-align: left;" > AIESEC in Babez </div>
+                </div>
+            </div>
+        </a>
+</div>
+       
+<div class="col-md-3">
+	    <a  href="{% url 'benak' %}" >
+            <div class='avia-image-container  av-styling-    avia-builder-el-15  el_before_av_textblock  avia-builder-el-first   avia-align-center ' itemprop="ImageObject" itemscope="itemscope">
+                <div class='avia-image-container-inner' style="border: 1px solid #ccc"  >
+                    <img class='avia_image ' src="{% static 'images/pictures/LCs/alg1.png' %}" alt='' title='world logo' itemprop="thumbnailUrl" style="height: auto; width : 100%  " />
+                     <div style=" padding: 15px; text-align: left;" > AIESEC in Benak </div>
+                </div>
+            </div>
+        </a>
+</div>
+
+<div class="col-md-3" >
+	    <a  href="{% url 'blida' %}" >
+            <div class='avia-image-container  av-styling-    avia-builder-el-15  el_before_av_textblock  avia-builder-el-first   avia-align-center ' itemprop="ImageObject" itemscope="itemscope">
+                <div class='avia-image-container-inner' style="border: 1px solid #ccc"  >
+                    <img class='avia_image ' src="{% static 'images/pictures/LCs/blida.jpg' %}" alt='' title='world logo' itemprop="thumbnailUrl" style="height: auto; width : 100%  " />
+                     <div style=" padding: 15px; text-align: left;" > AIESEC in Blida </div>
+                </div>
+            </div>
+        </a>
+</div>
+</div>
+
+<div class="row justify-content-md-center wrap" style="box-sizing: border-box;  ">
+
+<div class="col-md-3">
+	    <a  href="{% url 'oran' %}" >
+            <div class='avia-image-container  av-styling-    avia-builder-el-15  el_before_av_textblock  avia-builder-el-first   avia-align-center ' itemprop="ImageObject" itemscope="itemscope">
+                <div class='avia-image-container-inner' style=" border: 1px solid #ccc ">
+                    <img class='avia_image ' src="{% static 'images/pictures/LCs/oran.png' %}"  itemprop="thumbnailUrl" style="height: auto; width : 100% " />
+                    <div style=" padding: 15px; text-align: left;"> AIESEC in Oran </div>
+                </div>
+            </div>
+        </a>
+</div>
+        
+<div class="col-md-3" >
+	    <a  href="{% url 'ouargla' %}" >
+            <div class='avia-image-container  av-styling-    avia-builder-el-15  el_before_av_textblock  avia-builder-el-first   avia-align-center ' itemprop="ImageObject" itemscope="itemscope">
+                <div class='avia-image-container-inner' style="border: 1px solid #ccc" >
+                    <img class='avia_image ' src="{% static 'images/pictures/LCs/ouargla.png' %}" itemprop="thumbnailUrl"  />
+                     <div style=" padding: 15px; text-align: left;" > AIESEC in Ouargla </div>
+                </div>
+            </div>
+        </a>
+</div>
+       
+<div class="col-md-3">
+	    <a  href="{% url 'cons' %}" >
+            <div class='avia-image-container  av-styling-    avia-builder-el-15  el_before_av_textblock  avia-builder-el-first   avia-align-center ' itemprop="ImageObject" itemscope="itemscope">
+                <div class='avia-image-container-inner' style="border: 1px solid #ccc"  >
+                    <img class='avia_image ' src="{% static 'images/pictures/LCs/cons.png' %}" alt='' title='world logo' itemprop="thumbnailUrl" style="height: auto; width : 100%  " />
+                     <div style=" padding: 15px; text-align: left;" > AIESEC in Constantine </div>
+                </div>
+            </div>
+        </a>
+</div>
+</div>
+</div>

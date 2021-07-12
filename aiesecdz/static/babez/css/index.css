@@ -1,0 +1,203 @@
+.masthead {
+    background-image: url("../images/banner.jpg");
+}
+
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url(../fonts/Segoe%20UI%20Bold.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Segoe UI Bold Italic";
+    src: url(../fonts/Segoe%20UI%20Bold%20Italic.woff) format("woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe UI Italic";
+    src: url(../fonts/Segoe%20UI%20Italic.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Segoe UI Regular";
+    src: url(../fonts/Segoe%20UI.woff) format("woff");
+}
+
+@font-face {
+    font-family: "oracleScript";
+    src: url(../fonts/Oraqle_Script.ttf);
+}
+
+header {
+    background: url("../img/alger1_780x360.jpg") no-repeat center center;
+    background-size: cover;
+    border: 1px solid #707070;
+}
+
+.myNavList {
+    font-family: "Segoe UI Regular";
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.nav-link-item {
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #ffffff;
+}
+
+.logo {
+    height: 50px;
+}
+
+@media screen and (max-width: 430px) {
+    .logo {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logo {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 298px) {
+    .logo {
+        height: 20px;
+    }
+}
+
+.myRow {
+    margin-top: 70px;
+    margin-left: 1px;
+    box-shadow: 10px 10px 6px #00000029;
+}
+
+.myCard {
+    height: 400px;
+    width: 300px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 6px #00000080;
+    border: 1px solid #707070;
+    border-radius: 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imgCard {
+    max-width: 205px;
+    width: 205px;
+}
+
+section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+}
+
+.section1 h2 {
+    font-family: "Segoe UI Bold";
+}
+
+.section1 h3 {
+    font-family: "Segoe UI Bold";
+}
+
+.section1 h4 {
+    font-family: "Segoe UI Regular";
+}
+
+.section2 h2 {
+    font-family: "Segoe UI Bold";
+    text-align: center;
+}
+
+.myCol1 {
+    background-color: #037ef3;
+    height: 300px;
+}
+
+.section2 p {
+    font-family: "oracleScript";
+    color: #ffffff;
+    font-size: 120px;
+    line-height: 80px;
+}
+
+.myCol2 {
+    height: 300px;
+    background-size: cover;
+}
+
+.myMasthead {
+    background: url('../img/banner.jpg') no-repeat center center;
+    background-size: cover;
+    border: 1px solid #707070;
+}
+
+.myCard2 {
+    height: 620px;
+    width: 100%;
+    max-width: 360px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 6px #00000080;
+    border: 1px solid #707070;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.GV {
+    border-top: 15px solid #f05c42;
+}
+
+.GE {
+    border-top: 15px solid #43ba9a;
+}
+
+.GT {
+    border-top: 15px solid #118d9e;
+}
+
+.imgCard2 {
+    max-width: 85%;
+    height: auto;
+}
+
+.myCardParagraph {
+    height: 220px;
+}
+
+.section1 .myCard2 p {
+    font-family: "Segoe UI Regular";
+    font-size: 18px;
+}
+
+.myRowIndex {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 1210px) {
+    .myRowIndex {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.section2Index {
+    font-family: "Segoe UI Regular";
+}
+
+.projectDesc {
+    align-items: end;
+    height: 500px;
+    background-color: #037ef3;
+    font-family: "Segoe UI Regular";
+    color: #ffffff;
+}
+
+.projectDesc h2 {
+    font-family: "oracleScript";
+    font-size: 4em;
+}

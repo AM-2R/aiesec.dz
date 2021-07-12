@@ -1,0 +1,161 @@
+{% extends "babez/base.html" %}
+{% load static %}
+
+{% block heads %}
+<link rel="stylesheet" href="{% static 'babez/css/index.css' %}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+{% endblock heads %}
+
+{% block content %}
+<header class="masthead text-white">
+    <div class="overlay" style="opacity: 0.81;background-color: #000;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 text-break">
+                <h3>GO ON AN ADVENTURE</h3>
+                <h1>AND IMPACT THE WORLD</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="text-center section1">
+    <div class="container-fluid">
+        <div class="row myRowIndex">
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="myCard2 GV">
+                    <div class="p-4">
+                        <img class="imgCard2" src="{% static "babez/images/GV.png" %}">
+                    </div>
+                    <div class="pl-4 pr-4 myCardParagraph">
+                        <p>
+                            <b>GLOBAL VOLUNTEER</b> it is a volunteering program for SIX-WEEKS ,
+                            through it you will be experiencing new cultures, making an impact,
+                            and pushing yourself out of your comfort zone and developing your leadership .
+                        </p>
+                    </div>
+                    <h4>DURATION</h4>
+                    <p>6 weeks</p>
+                    <h4>ORGANIZATION</h4>
+                    <p>A School, summer camp or NGO</p>
+                    <h4>COMPENSATION</h4>
+                    <p>No</p>
+
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="myCard2 GE">
+                    <div class="p-4">
+                        <img class="imgCard2" src="{% static "babez/images/GE.png" %}">
+                    </div>
+                    <div class="pl-4 pr-4 myCardParagraph">
+                        <p>
+                            <b>GLOBAL ENTREPRENEUR</b> is an internship experience within a startup
+                            where young people can explore, learn and contribute to the entrepreneurial
+                            world. and that is for 6 to 12 weeks .
+                        </p>
+                    </div>
+                    <h4>DURATION</h4>
+                    <p>6-12 weeks</p>
+                    <h4>ORGANIZATION</h4>
+                    <p>Startup</p>
+                    <h4>COMPENSATION</h4>
+                    <p>No</p>
+
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="myCard2 GT">
+                    <div class="p-4">
+                        <img class="imgCard2" src="{% static "babez/images/GT.png" %}">
+                    </div>
+                    <div class="pl-4 pr-4 myCardParagraph">
+                        <p>
+                            <b>GLOBAL TALENT</b> is an internship experience for young people aiming
+                            towards professional career development in a global setting.
+                            where you will work in a company, school or institution for 6 to 78 weeks.
+                        </p>
+                    </div>
+                    <h4>DURATION</h4>
+                    <p>6-78 weeks</p>
+                    <h4>ORGANIZATION</h4>
+                    <p>A company ,school or institution</p>
+                    <h4>COMPENSATION</h4>
+                    <p>Yes</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class=" section2Index text-center">
+    <h2 class="pb-5">Opportunities available here in Algiers</h2>
+    <div class="container mt-5">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!--GSSE-->
+
+                <div class="carousel-item active">
+                    <div class="w-100 row ">
+                        <div class="col-lg-7  projectDesc">
+                            <div>
+                                <h2>Global School Summer Edition</h2>
+                                <p>C’est un projet de volontariat créé par AIESEC qui sera virtuel pour sa 5éme édition
+                                    cette année. Ce dernier offre un programme fourni qui aide les jeunes Algériens
+                                    pour enrichir leurs connaissances ou découvrir leurs aptitudes, grâce a la recherche
+                                    de solutions durables et raisonnées en Algérie, à travers des sessions de
+                                    développement personnel, cours de langues et des challenges qui vont s’etaler sur
+                                    une durée de 4 semaine.
+                                </p>
+                            </div>
+                            <div class="carousel-caption ">
+                                <img src="{% static "babez/images/4b.JPG" %}" class="d-none d-md-inline" alt=""
+                                    width="50">
+                            </div>
+                        </div>
+                        <div class="col-lg-5"
+                            style="background:url('{% static "babez/images/gsse.jpg" %}') no-repeat center center;background-size: cover;height: 500px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="w-100 row ">
+                        <div class="col-lg-7  projectDesc">
+                            <div>
+                                <h2>Global School Environmental Action</h2>
+                                <p>
+                                    "Global School Environmental Action" est un événement éducatif à thématiques
+                                    environementales variées et riches.
+                                    En effet, ce projet vise à stimuler les consciences environnementales , promouvoir
+                                    les démarches individuelles et collectives à la nécessité de protéger la nature,
+                                    sensibiliser le large public à adopter une hygiène de vie saine et les éblouir par
+                                    l'écologie.
+                                </p>
+                            </div>
+                            <div class="carousel-caption ">
+                                <img src="{% static "babez/images/12.JPG" %}" class="d-none d-md-inline" alt=""
+                                    width="50">
+                                <img src="{% static "babez/images/15b.JPG" %}" class="d-none d-md-inline" alt=""
+                                    width="50">
+                            </div>
+                        </div>
+                        <div class="col-lg-5"
+                            style="background:url('{% static "babez/images/gsea.jpg" %}') no-repeat center center;background-size: cover;height: 500px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    {% endblock content %}
